@@ -1,0 +1,32 @@
+// 7) Em uma fábrica de reciclagem de materiais, cada 10kg de plástico rendem R$2,00 cada 30kg de papel rendem R$3,00 e cada 50kg de metal rendem R$5,00.
+// Perguntar ao usuário a quantidade (kg) de cada material que deseja entregar na fábrica e mostrar o total que receberá em reais. 
+function verificacaoDeMaterial(){
+let a_cada_dez_kilos_de_plastico_remdem = 2;
+let quantidade_minima_de_plastico_necessaria = 10;
+let a_cada_trinta_kilos_de_papel_rendem = 3;
+let quantidade_minima_de_papel_necessaria = 30;
+let a_cada_cinquenta_kilos_de_metal_rendem = 5;
+let quantidade_minima_de_metal_necessaria = 50;
+let quantidade_de_material_em_kg;
+let tipo_do_material;
+let valor_total_de_rendimento;
+
+tipo_do_material = prompt(`Qual o tipo do material? (Metal, Plástico ou Papel )`)
+quantidade_de_material_em_kg = prompt(`Quantos kilos de ${tipo_do_material} deseja entregar?`);
+
+if(tipo_do_material == `Metal` || tipo_do_material == `metal` && quantidade_de_material_em_kg >= quantidade_de_material_em_kg){
+       
+    valor_total_de_rendimento = (quantidade_de_material_em_kg * a_cada_cinquenta_kilos_de_metal_rendem) / quantidade_minima_de_metal_necessaria;
+    alert(`O valor de rendimento que você obteve foi de:  R$${valor_total_de_rendimento}.`);
+} else if(tipo_do_material == `papel` || tipo_do_material == `Papel`){
+
+    valor_total_de_rendimento = (quantidade_de_material_em_kg * a_cada_trinta_kilos_de_papel_rendem) / quantidade_minima_de_papel_necessaria;
+} else if(tipo_do_material == `Plástico` || tipo_do_material == `plastico`){
+    valor_total_de_rendimento = (   quantidade_minima_de_plastico_necessaria * a_cada_dez_kilos_de_plastico_remdem) / quantidade_minima_de_plastico_necessaria;
+    alert(`O valor de rendimento que você obteve foi de:  R$${valor_total_de_rendimento}.`);
+} else {
+   alert(`O valor está inválido, favor inserir um dos 3 materiais;`);
+   verificacaoDeMaterial();
+}
+}
+verificacaoDeMaterial();
