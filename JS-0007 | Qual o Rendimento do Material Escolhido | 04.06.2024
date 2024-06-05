@@ -7,26 +7,22 @@ let a_cada_trinta_kilos_de_papel_rendem = 3;
 let quantidade_minima_de_papel_necessaria = 30;
 let a_cada_cinquenta_kilos_de_metal_rendem = 5;
 let quantidade_minima_de_metal_necessaria = 50;
-let quantidade_de_material_em_kg;
-let tipo_do_material;
-let valor_total_de_rendimento;
+let quantidade_de_metal_coletado;
+let quantidade_de_papel_coletado;
+let quantidade_de_plastico_coletado;
+let valor_total_de_rendimento_de_metal;
+let valor_total_de_rendimento_de_plastico;
+let valor_total_de_rendimento_de_papel;
+let valor_de_lucro;
 
-tipo_do_material = prompt(`Qual o tipo do material? (Metal, Plástico ou Papel )`)
-quantidade_de_material_em_kg = prompt(`Quantos kilos de ${tipo_do_material} deseja entregar?`);
 
-if(tipo_do_material == `Metal` || tipo_do_material == `metal` && quantidade_de_material_em_kg >= quantidade_de_material_em_kg){
-       
-    valor_total_de_rendimento = (quantidade_de_material_em_kg * a_cada_cinquenta_kilos_de_metal_rendem) / quantidade_minima_de_metal_necessaria;
-    alert(`O valor de rendimento que você obteve foi de:  R$${valor_total_de_rendimento}.`);
-} else if(tipo_do_material == `papel` || tipo_do_material == `Papel`){
-
-    valor_total_de_rendimento = (quantidade_de_material_em_kg * a_cada_trinta_kilos_de_papel_rendem) / quantidade_minima_de_papel_necessaria;
-} else if(tipo_do_material == `Plástico` || tipo_do_material == `plastico`){
-    valor_total_de_rendimento = (   quantidade_minima_de_plastico_necessaria * a_cada_dez_kilos_de_plastico_remdem) / quantidade_minima_de_plastico_necessaria;
-    alert(`O valor de rendimento que você obteve foi de:  R$${valor_total_de_rendimento}.`);
-} else {
-   alert(`O valor está inválido, favor inserir um dos 3 materiais;`);
-   verificacaoDeMaterial();
-}
+quantidade_de_metal_coletado = prompt(`Quantos kilos de metal deseja entregar?`);
+quantidade_de_papel_coletado = prompt(`Quantos kilos de papel deseja entregar?`);
+quantidade_de_plastico_coletado = prompt(`Quantos kilos de plástico deseja entregar?`)
+    valor_total_de_rendimento_de_metal = (quantidade_de_metal_coletado * a_cada_cinquenta_kilos_de_metal_rendem) / quantidade_minima_de_metal_necessaria;
+    valor_total_de_rendimento_de_papel = (quantidade_de_papel_coletado * a_cada_trinta_kilos_de_papel_rendem) / quantidade_minima_de_papel_necessaria;
+    valor_total_de_rendimento_de_plastico = (quantidade_de_plastico_coletado * a_cada_dez_kilos_de_plastico_remdem) / quantidade_minima_de_plastico_necessaria;
+    valor_de_lucro = valor_total_de_rendimento_de_metal + valor_total_de_rendimento_de_papel + valor_total_de_rendimento_de_plastico
+    alert(`O valor de rendimento que você obteve foi de: R$${valor_de_lucro}.`);
 }
 verificacaoDeMaterial();
