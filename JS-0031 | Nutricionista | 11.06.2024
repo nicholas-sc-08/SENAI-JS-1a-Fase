@@ -1,0 +1,46 @@
+// 14) Um nutricionista precisa controlar a dieta para pacientes celíacos (intolerantes à glúten) e pacientes com intolerância à lactose. 
+// Criar um programa onde o paciente deve digitar seu nome e em seguida responder se é celíaco (primeira pergunta) e se é intolerante à lactose (segunda pergunta). 
+// Validar as respostas de SIM e NÃO para letras maiúsculas e minúsculas. Em seguida coletar os dados de 3 alimentos, sendo digitado o nome do alimento, 
+// se ele contém glúten ou não e se ele contém lactose ou não. Ao final, informar se o paciente pode comer os 3 alimentos digitados "Dieta adequada!" ou não 
+// pode "Dieta inadequada, contém alimentos aos quais o paciente é intolerante!".
+
+let nome_do_usuario;
+let possui_intolerancia_a_gluten;
+let possui_intolerancia_a_lactose;
+let afirmacao = `SIM`;
+let negacao = `NÂO`;
+let alimento_A;
+let possui_gluten_alimento_A;
+let possui_lactose_alimento_A;
+let alimento_B;
+let possui_gluten_alimento_B;
+let possui_lactose_alimento_B;
+let alimento_C;
+let possui_gluten_alimento_C;
+let possui_lactose_alimento_C;
+
+nome_do_usuario = prompt(`Seu nome:`);
+possui_intolerancia_a_gluten = prompt(`Você possui intolerância a glúten?`);
+possui_intolerancia_a_lactose = prompt(`Você possui intolerância a lactose?`);
+alimento_A = prompt(`Digite o primeiro alimento.`);
+possui_lactose_alimento_A = prompt(`Possui lactose o(a) ${alimento_A}?`);
+possui_gluten_alimento_A = prompt(`Possui glúten o(a) ${alimento_A}?`);
+alimento_B = prompt(`Digite o segundo alimento.`);
+possui_lactose_alimento_B = prompt(`Possui lactose o(a) ${alimento_B}?`);
+possui_gluten_alimento_B = prompt(`Possui glúten o(a) ${alimento_B}?`);
+alimento_C = prompt(`Digite o terceiro alimento.`);
+possui_lactose_alimento_C = prompt(`Possui lactose o(a) ${alimento_C}?`);
+possui_gluten_alimento_C = prompt(`Possui glúten o(a) ${alimento_C}?`);
+
+possui_intolerancia_a_gluten.toUpperCase();
+possui_intolerancia_a_lactose.toUpperCase();
+possui_gluten_alimento_A.toUpperCase();
+possui_lactose_alimento_A.toUpperCase();
+possui_gluten_alimento_B.toUpperCase();
+possui_lactose_alimento_B.toUpperCase();
+possui_lactose_alimento_C.toUpperCase();
+possui_gluten_alimento_C.toUpperCase();
+
+if(possui_intolerancia_a_gluten == afirmacao){
+    
+}
