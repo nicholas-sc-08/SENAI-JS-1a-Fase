@@ -41,6 +41,20 @@ possui_lactose_alimento_B.toUpperCase();
 possui_lactose_alimento_C.toUpperCase();
 possui_gluten_alimento_C.toUpperCase();
 
-if(possui_intolerancia_a_gluten == afirmacao){
+if(possui_intolerancia_a_gluten == afirmacao ){
     
-}
+    if(possui_gluten_alimento_A == afirmacao || possui_gluten_alimento_B == afirmacao || possui_gluten_alimento_C == afirmacao){
+      alert(`Dieta inadequada.`);
+    } else {
+        alert(`Dieta adequada.`);
+    };
+} else if(possui_intolerancia_a_lactose == afirmacao && possui_intolerancia_a_gluten){
+
+    if(possui_lactose_alimento_A == afirmacao || possui_lactose_alimento_B == afirmacao || possui_lactose_alimento_C == afirmacao){
+        alert(`Dieta inadequada.`);
+    } else {
+        alert(`Dieta adequada.`);
+    };
+} else {
+    alert(`Dieta adequada.`);
+};
