@@ -1,0 +1,45 @@
+// 2) Criar um programa que informa quantos dias tem determinado mês (desconsiderando ano bissexto) do ano. Deve ser perguntado ao usuário o mês e a resposta deve ser numérica. Exemplo: Usuário digitou 3, que corresponde a março. Mostrar na tela "O mês possui 31 dias".
+
+let opcao_usuario = parseInt(prompt(`Digite o mês (em valor numérico) para saber a quantidades de dias. `));
+
+switch(opcao_usuario){
+
+  case `1`:
+    alert(`Janeiro, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Fevereiro, 29 dias.`);
+    break;
+    case `1`:
+    alert(`Março, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Abril, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Maio, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Junho, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Julho, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Agosto, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Setembro, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Outubro, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Novembro, 31 dias.`);
+    break;
+    case `1`:
+    alert(`Dezembro, 31 dias.`);
+    break;
+    default:
+        alert(`Mês inválido, digite entre 1 a 12.`);
+};
