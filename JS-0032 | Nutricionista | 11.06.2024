@@ -9,28 +9,35 @@ let intolerante_a_gluten;
 let resposta_a_gluten;
 let resposta_a_lactose;
 let alimento_nao_recomandado = false;
-const afirmacao = `SIM`;
+let afirmacao = `SIM`;
 
 prompt(`Qual o nome do paciente?`);
 intolerante_a_lactose = prompt(`É intolerante a lactose?`);
 intolerante_a_gluten = prompt(`É intolerante a glúten?`);
 
 prompt(`Digite o nome do primeiro alimento:`);
-resposta_a_gluten = prompt(`Possui glúten?`);
-resposta_a_lactose = prompt(`Possui lactose?`);
+resposta_a_gluten = prompt(`Possui glúten?`).toUpperCase();
+resposta_a_lactose = prompt(`Possui lactose?`).toUpperCase();
+
+if(intolerante_a_gluten == afirmacao && resposta_a_gluten == afirmacao || intolerante_a_lactose == afirmacao && resposta_a_lactose == afirmacao){
+    alimento_nao_recomandado == true;
+};
+
 
 prompt(`Digite o segundo alimento:`);
-resposta_a_gluten = prompt(`Possui glúten?`);
-resposta_a_lactose = prompt(`Possui lactose?`);
+resposta_a_gluten = prompt(`Possui glúten?`).toUpperCase();
+resposta_a_lactose = prompt(`Possui lactose?`).toUpperCase();
+
+if(intolerante_a_gluten == afirmacao && resposta_a_gluten == afirmacao || intolerante_a_lactose == afirmacao && resposta_a_lactose == afirmacao){
+    alimento_nao_recomandado == true;
+};
+
 
 prompt(`Digite o terceiro alimento:`);
-resposta_a_gluten = prompt(`Possui glúten?`);
-resposta_a_lactose = prompt(`Possui lactose`);
+resposta_a_gluten = prompt(`Possui glúten?`).toUpperCase();
+resposta_a_lactose = prompt(`Possui lactose`).toUpperCase();
 
-resposta_a_gluten.toUpperCase();
-resposta_a_lactose.toUpperCase();
-
-if(intolerante_a_gluten == afirmacao && resposta_a_gluten == afirmacao || intolerante_a_lactose && resposta_a_lactose){
+if(intolerante_a_gluten == afirmacao && resposta_a_gluten == afirmacao || intolerante_a_lactose == afirmacao && resposta_a_lactose == afirmacao){
     alimento_nao_recomandado == true;
 };
 
