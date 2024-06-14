@@ -20,8 +20,9 @@ let velocidade_media_um;
 let velocidade_media_dois;
 let velocidade_media_tres;
 let velocidade_media_quatro;
-let soma_das_velocidades_medias;
+let distancia_total;
 let velocidade_media_geral;
+let soma_das_medias;
 const quantidade_de_trechos = 4;
 const desempenho_a = 15;
 const desempenho_b = 18;
@@ -49,14 +50,14 @@ velocidade_media_dois = trecho_dois_distancia / tempo_pedalado_em_horas_dois;
 velocidade_media_tres = trecho_tres_distancia / tempo_pedalado_em_horas_tres;
 velocidade_media_quatro = trecho_quatro_distancia / tempo_pedalado_em_horas_quatro;
 
-soma_das_velocidades_medias = velocidade_media_um + velocidade_media_dois + velocidade_media_tres + velocidade_media_quatro;
-velocidade_media_geral = soma_das_velocidades_medias / quantidade_de_trechos;
+soma_das_medias = velocidade_media_um + velocidade_media_dois + velocidade_media_tres + velocidade_media_quatro;
+velocidade_media_geral = soma_das_medias / quantidade_de_trechos;
 
 
-alert(`Velocidade média do(a) ${integrante_um}: ${velocidade_media_um.toFixed(2)}km/h.`);
-alert(`Velociade média do(a) ${integrante_dois}: ${velocidade_media_dois.toFixed(2)}km/h.`);
-alert(`Velocidade média do(a) ${integrante_tres}: ${velocidade_media_tres.toFixed(2)}km/h.`);
-alert(`Velociade média do(a) ${integrante_quatro}: ${velocidade_media_quatro.toFixed(2)}km/h.`);
+alert(`Velocidade média do(a) ${integrante_um}: ${velocidade_media_um.toFixed(2)}km/h.\nTrajeto: ${trecho_um_nome}.`);
+alert(`Velociade média do(a) ${integrante_dois}: ${velocidade_media_dois.toFixed(2)}km/h.\nTrajeto: ${trecho_dois_nome}.`);
+alert(`Velocidade média do(a) ${integrante_tres}: ${velocidade_media_tres.toFixed(2)}km/h.\nTrajeto: ${trecho_tres_nome}.`);
+alert(`Velociade média do(a) ${integrante_quatro}: ${velocidade_media_quatro.toFixed(2)}km/h.\nTrajeto: ${trecho_quatro_nome}`);
 alert(`Velocidade média geral: ${velocidade_media_geral.toFixed(2)}km/h.`);
 if(velocidade_media_geral < desempenho_a){
     alert(`Desempenho pode melhorar bastante!`);
