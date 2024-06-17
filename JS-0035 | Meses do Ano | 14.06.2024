@@ -7,37 +7,37 @@ switch(opcao_usuario){
   case `1`:
     alert(`Janeiro, 31 dias.`);
     break;
-    case `1`:
+    case `2`:
     alert(`Fevereiro, 29 dias.`);
     break;
-    case `1`:
+    case `3`:
     alert(`Março, 31 dias.`);
     break;
-    case `1`:
-    alert(`Abril, 31 dias.`);
+    case `4`:
+    alert(`Abril, 30 dias.`);
     break;
-    case `1`:
+    case `5`:
     alert(`Maio, 31 dias.`);
     break;
-    case `1`:
-    alert(`Junho, 31 dias.`);
+    case `6`:
+    alert(`Junho, 30 dias.`);
     break;
-    case `1`:
+    case `7`:
     alert(`Julho, 31 dias.`);
     break;
-    case `1`:
+    case `8`:
     alert(`Agosto, 31 dias.`);
     break;
-    case `1`:
-    alert(`Setembro, 31 dias.`);
+    case `9`:
+    alert(`Setembro, 30 dias.`);
     break;
-    case `1`:
+    case `10`:
     alert(`Outubro, 31 dias.`);
     break;
-    case `1`:
-    alert(`Novembro, 31 dias.`);
+    case `11`:
+    alert(`Novembro, 30 dias.`);
     break;
-    case `1`:
+    case `12`:
     alert(`Dezembro, 31 dias.`);
     break;
     default:
