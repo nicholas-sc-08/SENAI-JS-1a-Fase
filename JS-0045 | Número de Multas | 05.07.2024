@@ -1,0 +1,26 @@
+// 3) Desenvolver um programa no qual o usuário digite o número de multas que deseja cadastrar e para cada multa deve colocar o valor em reais e os pontos perdidos na carteira de habilitação. Ao final, mostrar o somatório das multas e dos pontos, caso os pontos alcancem 21 ou mais, exibir a mensagem “Você está irregular”, senão, exibir “Você está regular”.
+
+
+let cadastrar_numero_de_multas = parseInt(prompt(`Digite a quantidade de multas que deseja cadastrar:`));
+let contador = 0;
+let valor_de_cada_multa;
+let pontos_adicionados_na_carteira;
+let quantidade_maxima_de_pontos = 21;
+let regulacao;
+
+while(contador < cadastrar_numero_de_multas){
+
+    valor_de_cada_multa = Number(prompt(`Digite o valor de multa:`));
+    pontos_adicionados_na_carteira = Number(prompt(`Digite quantos pontos na carteira deseja adicionar:`));
+
+    contador++
+};
+
+    regulacao = pontos_adicionados_na_carteira + cadastrar_numero_de_multas;
+
+if(regulacao > quantidade_maxima_de_pontos){
+    alert(`Você está irregular`);
+} else{
+    alert(`Você está regular`);
+}
+
