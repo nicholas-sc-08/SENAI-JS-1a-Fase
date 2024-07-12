@@ -9,8 +9,8 @@ respota_usuario = 2;
 respota_usuario = parseInt(prompt(`Digite o número que você deseja saber a tabuada:`));
 
 while(contador < valor_maximo_da_tabuada){
-    contador++
-    resultado = respota_usuario * contador
+    contador++;
+    resultado = respota_usuario * contador;
 
     alert(`Tabuada do ${respota_usuario}:\n\n${respota_usuario} x ${contador} = ${resultado}`);
 };
