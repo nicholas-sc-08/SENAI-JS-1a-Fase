@@ -6,7 +6,7 @@ Se não for, adicione "alongamento" ao final da lista. Imprima a lista de exerc�
 
 let exerciciosSemana = ["corrida", "flexões", "abdominais"];
 
-if(exerciciosSemana[2] == "alongamento"){
+if(exerciciosSemana.length - 1 == "alongamento"){
     console.log(exerciciosSemana);
 } else{
     exerciciosSemana.push("alongamento");
