@@ -6,9 +6,8 @@
 let lista_de_numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 
-if(lista_de_numeros.length > 5){
-    
-    lista_de_numeros.splice(5, 15);
-}
+for(i = 0; i < 10; i++){
+ lista_de_numeros.pop();
+};
 
 console.log(lista_de_numeros);
